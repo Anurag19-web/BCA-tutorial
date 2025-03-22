@@ -61,7 +61,7 @@ export const Videos = () =>{
                         video[7].javascript.map((jsData) =>{
                             const {id,name,URL} = jsData;
                             return(
-                                <div className="VideosDiv">
+                                <div className="VideosDiv" key={id}>
                                 {/* <p>{id}</p> */}
                
                <iframe width="450" height="300" src={URL} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
@@ -91,7 +91,7 @@ export const Videos = () =>{
                         video[14].python.map((pyData) =>{
                             const {id,name,URL} = pyData;
                             return(
-                                <div className="VideosDiv">
+                                <div className="VideosDiv" key={id}>
                                 {/* <p>{id}</p> */}
                
                <iframe width="450" height="300" src={URL} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
