@@ -1,0 +1,46 @@
+[
+    {   "id":1,
+        "name":"HTML",
+        "URL":"https://youtu.be/HcOc7P5BMi4?feature=shared"
+    },
+    {
+        "id":2,
+        "name":"CSS",
+        "URL":"CSS VIDEO"
+    },
+    {
+        "id":3,
+        "name":"CODE",
+        "URL":"CODE VIDEO"
+    },
+    {
+        "id":4,
+        "name":"JAVASCRIPT",
+        "URL":"JAVASCRIPT VIDEO"
+    },
+    {
+        "id":5,
+        "name":"C LANGUAGE",
+        "URL":"C LANGUAGE VIDEO"
+    },
+    {
+        "id":6,
+        "name":"DBMS",
+        "URL":"DBMS VIDEO"
+    },
+    {
+        "id":7,
+        "name":"C++",
+        "URL":"C++ VIDEO"
+    },
+    {
+        "id":8,
+        "name":"ADBMS",
+        "URL":"ADBMS VIDEO"
+    },
+    {
+        "id":9,
+        "name":"VISUAL DESIGN",
+        "URL":"VISUAL DESIGN VIDEO"
+    }
+]

@@ -1,0 +1,33 @@
+import {  NavLink } from "react-router-dom"
+
+export const Home = () =>{
+
+    return (
+    <>
+    <div className="Home">
+    <h1 className="Home-head">Empowering Students to Succeed</h1>
+    <br/>
+    <h3 className="Home-head-2">Access high-quality educational videos for BCA.</h3>
+    <br/>
+    <NavLink to="/categories" className="Home-link">
+    <div className="Home-link-div">
+    Click Here To Start Learning
+    </div>
+    </NavLink>
+    </div>
+    <div className="Home-Intro">
+        <h1>Featured Courses</h1>
+        <h3>BCA Introduction</h3>
+        <p>Learn the fundamentals of BCA.</p>
+        <br/>
+        <br/>
+        <h3>Coding Basics</h3>
+        <p>Understand the basics of coding.</p>
+        <br/>
+        <br/>
+        <h3>Business Law</h3>
+        <p>Get familiar with essential bussiness laws.</p>
+    </div>
+    </>
+    )
+}

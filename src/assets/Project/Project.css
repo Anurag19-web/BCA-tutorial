@@ -1,0 +1,360 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.Header{
+    background-color: gray;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.Header-head{
+    color: blue;
+    font-size: 50px;
+    font-weight: 500;
+}
+.Header-home{
+    font-weight: 500;
+    font-size: 30px;
+}
+.Header-categories{
+    font-weight: 500;
+    font-size: 30px;
+}
+.Header-account{
+    font-weight: 500;
+    font-size: 30px;
+}
+.Home{
+    background-color: blue;
+    height: 300px;
+}
+.Home-head{
+    font-size: 50px;
+    color: white;
+    margin-left: 350px;
+}
+.Home-head-2{
+    font-size: 30px;
+    color: white;
+    margin-left: 380px;
+}
+.Home-link-div{
+    background-color: white;
+    height: 50px;
+    width: 300px;
+    margin-left: 600px;
+    padding-top: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+.Home-link{
+    font-size: 20px;
+    color: blue;
+}
+.Categories-head-div{
+    background-color: white;
+    margin-left: 500px;
+}
+.Categories-head{
+    font-size: 50px;
+    font-weight: 500;
+}
+.Categories-para{
+    font-size: 20px;
+    margin-left: -40px;
+}
+.Categories-div{
+    background-color: black;
+    color: white;
+    margin-left: 500px;
+    height: 200px;
+    width: 500px;
+    border-radius: 10px;
+}
+.Categories-div-head{
+    font-size: 40px;
+    margin-left: 130px;
+}
+.Categories-div-para{
+    font-size: 20px;
+    margin-left:100px;
+    width: 300px;
+}
+.Categories-div-btn-div{
+  background-color: blue;
+  color: white;
+  height: 50px;
+  width: 200px;
+  text-align: center;
+  border-radius: 10px;
+  margin-left: 140px;
+  margin-top: 20px;
+  padding: 7px;
+}
+.Categories-div-btn{
+    font-size: 20px;
+}
+.Subject-head-div{
+    background-color: white;
+    margin-left: 550px;
+}
+.Subject-head{
+    font-size: 50px;
+    font-weight: 500;
+}
+.Subject-para{
+    font-size: 20px;
+    margin-left: -80px;
+}
+.Subject-div{
+    background-color: black;
+    color: white;
+    margin-left: 500px;
+    height: 200px;
+    width: 500px;
+    border-radius: 10px;
+}
+.Subject-div-head{
+    font-size: 40px;
+    margin-left: 190px;
+}
+.Subject-div-para{
+    font-size: 20px;
+    margin-left:140px;
+}
+.Subject-div-btn-div{
+  background-color: blue;
+  color: white;
+  height: 50px;
+  width: 200px;
+  text-align: center;
+  border-radius: 10px;
+  margin-left: 140px;
+  margin-top: 20px;
+  padding: 8px;
+}
+.Subject-div-btn{
+    font-size: 20px;
+}
+.Chapter-head-div{
+    background-color: white;
+    margin-left: 530px;
+}
+.Chapter-head{
+    font-size: 50px;
+    font-weight: 500;
+    margin-left: 70px;
+}
+.Chapter-para{
+    font-size: 20px;
+    margin-left: 120px;
+}
+.Chapter-div{
+    background-color: black;
+    color: white;
+    margin-left: 540px;
+    height: 200px;
+    width: 500px;
+    border-radius: 10px;
+}
+.Chapter-div-head{
+    font-size: 40px;
+    margin-left: 110px;
+}
+.Chapter-div-para{
+    font-size: 20px;
+    margin-left:85px;
+}
+.Chapter-div-btn-div{
+  background-color: blue;
+  color: white;
+  height: 50px;
+  width: 200px;
+  text-align: center;
+  border-radius: 10px;
+  margin-left: 140px;
+  margin-top: 20px;
+  padding: 7px;
+}
+.Chapter-div-btn{
+    font-size: 20px;
+}
+
+.Footer{
+    background-color: gray;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.Footer-about{
+    font-size: 30px;
+    margin-left: -100px;
+}
+.Footer-help{
+    font-size: 30px;
+    margin-left: 100px;
+}
+.Footer-contact{
+    font-size: 30px;
+    margin-left: 100px;
+}
+.VideosMainDiv{
+display: block;
+}
+.VideosDiv{
+    margin-left: 550px;
+    height: 300px;
+    width: 450px;
+    background-color: wheat;
+    border-radius: 10px;
+    margin-top: 80px;
+}
+.VideoHead{
+    font-size: 40px;
+    text-align: center;
+    padding-top: 50px;
+    color: white;
+}
+.VideoLink{
+    font-size: 40px;
+    margin-left: 140px;
+    color: white;
+}
+.index{
+    background-color: red;
+}
+.form-div{
+    background-color: blue;
+}
+.form{
+    height: 400px;
+}
+.account-header{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+.account-input{
+    background-color: white;
+    color: black;
+    height: 40px;
+    width: 600px;
+    border-radius: 5px;
+    margin: 10px 0px 0px 450px;
+}
+.account-submitBtn{
+    background-color: blue;
+    color: white;
+    margin-top: 30px;
+    margin-left: 700px;
+    font-size: 30px;
+}
+.account-home-btn{
+    background-color: white;
+    color: blue;
+    height: 40px;
+    width: 300px;
+    border-radius: 5px;
+    margin: 40px 0px 30px 600px;
+    font-size: 30px;
+    text-align: center;
+    padding-top:-40px;
+}
+.signup-info-div{
+    display: flex;
+    margin-left: 610px;
+}
+.signup-info{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+.signup-btn{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+.login-head{
+    font-size: 40px;
+    text-align: center;
+}
+.login-email{
+    height: 40px;
+    width: 600px;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+.login-password{
+    height: 40px;
+    width: 600px;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+@media screen and (max-width :1000px){
+    body{
+        /* height: 430px; */
+        width: 1000px;
+    }
+    .Header{
+        width: 1000px;
+    }
+    .Home{
+        width: 1000px;
+    }
+    .Home-head{
+        margin-left: 120px;
+    }
+    .Home-head-2{
+        margin-left: 180px;
+    }
+    .Home-link-div{
+        margin-left: 350px;
+    }
+    .Home-Intro{
+        width: 1000px;
+        height: 430px;
+        margin-top: 30px;
+        /* margin-left: 200px; */
+        text-align: center;
+    }
+    .Categories-head-div{
+        margin-left: 250px;
+    }
+    .Categories-div{
+        margin-left: 250px;
+    }
+    .Subject-head-div{
+        margin-left: 320px;
+    }
+    .Subject-div{
+        margin-left: 250px;
+    }
+    .Chapter-head-div{
+        margin-left: 90px;
+    }
+    .Chapter-div{
+        margin-left: 250px;
+    }
+    .Videos-head-div{
+        text-align: center;
+    }
+    /* .Videos-head{
+        text-align: center;
+        font-size: 100px;
+    } */
+     .VideosDiv{
+        margin-left: 280px;
+     }
+    .Footer{
+        width: 1000px;
+        margin-bottom: -1000px;
+    }
+    .Footer-about{
+        margin-left: 10px;
+    }
+    .form{
+        margin-left: -250px;
+    }
+}
