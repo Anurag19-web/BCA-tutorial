@@ -17,8 +17,8 @@ import { Signup } from "./assets/Project/Account/Signup"
 import { JavascriptTopic } from "./assets/Project/Topic/JavascriptTopic"
 import { PythonTopic } from "./assets/Project/Topic/PythonTopic"
 import { JavaTopic } from "./assets/Project/Topic/JavaTopic"
-import { CadTopic } from "./assets/Project/Topic/c++Topic"
-import "./output.css";
+import { CppTopic } from "./assets/Project/Topic/cppTopic"
+// import "./output.css";
 import { Login } from './assets/Project/Account/Login'
 
 function App(){
@@ -85,8 +85,8 @@ function App(){
           element:<DbmsTopic/>
         },
         {
-          path:"/c++/topic",
-          element:<CadTopic/>
+          path:"/cpp/topic",
+          element:<CppTopic/>
         },
         {
           path:"/java/topic",
@@ -103,6 +103,8 @@ function App(){
       ]
     }
   ])
+
+  
  return (
  <>
  <RouterProvider router={router} />
