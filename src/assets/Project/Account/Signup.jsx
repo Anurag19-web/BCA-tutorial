@@ -29,7 +29,7 @@ export const Signup = () =>{
     },[])
 
     return (<>
-    <div className="form-div">
+    <div className="form-signup">
     <h1 className="account-header">Sign Up</h1>
     <form onSubmit={handleSubmit} className="form">
         <input type="text" placeholder="Username" className="account-input" name="username" value={form.username} onChange={handleFrom}/>

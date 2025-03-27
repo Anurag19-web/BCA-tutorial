@@ -10,13 +10,13 @@ export const DbmsTopic = () =>{
     return (
         <>
         <div className="Chapter-head-div">
-            <h1 className="Chapter-head">DBMS HAVE ONE SHOT VIDEO</h1>
-            <p className="Chapter-para" >Click to start studying</p>
+            <h1 className="Chapter-head">DBMS Videos</h1>
+            {/* <p className="Chapter-para" >Click to start studying</p> */}
         </div>
         <br/>
-        <div className="Chapter-div">
-            <h1 className="Chapter-div-head">DBMS HAVE ONE SHOT VIDEO</h1>
-            <p className="Chapter-div-para">Learn the basics and advance of DBMS.</p>
+        <div className="Chapter-div" >
+            <h1 className="Chapter-div-head" >DBMS ONE SHOT</h1>
+            <p className="Chapter-div-para">Learn the basics of DBMS.</p>
             
             {/* <NavLink to="/videos" className="Chapter-div-bt">start Learning</NavLink> */}
             <button  className="Chapter-div-btn"  onClick={()=>handleClick(6)}>

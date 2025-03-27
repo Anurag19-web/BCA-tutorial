@@ -1,62 +1,58 @@
-import { useEffect, useState } from "react";
-import {  deletePost, getPost } from './PostApi';
-import { Form } from "./Form";
+import { useEffect, useState } from "react"
+import { deletePost, getPost } from "./PostApi";
+import { Form } from "react-router-dom";
 
 export const Posts = () =>{
 
-   const [data, setData] = useState([]);
-  const [updateDataApi, setUpdateDataApi] = useState({})
+  const [data,setData] = useState([]);
 
   console.log(getPost());
 
-  const getPostData = async() =>{
-  const res = await getPost();
-  console.log(res.data)
-  setData(res.data)
+  const getPostData = async ()=>{
+    const res = await getPost();
+    console.log(res.data);
+    setData(res.data);
   }
 
   useEffect(()=>{
    getPostData();
   },[])
 
-  const handleDeletePost = async (id) =>{
+  const handleDeletePost = async (id)=>{
     try {
-      const res = await deletePost(id);
-      if(res.status === 200){
-        const newUpdatedPosts = data.filter((curPost) =>{
-          return curPost.id != id;
+      const res= await deletePost(id);
+      if(res.status===200){
+        const newUpdatedApi = data.filter((curPost)=>{
+          return curPost.id!==id;
         })
-        setData(newUpdatedPosts);
-        console.log(res)
+        setData(newUpdatedApi);
+        console.log(newUpdatedApi);
       }else{
-        console.log("failed to delete the post",res.status);
-      }      
+        console.log("data can't deleted", res.status);
+      }
     } catch (error) {
       console.log(error);
     }
   }
 
-  const handleUpdatePost = (curElem) => setUpdateDataApi(curElem)
-
-  return (
+  return(
     <>
-    <Form data={data} setData={setData} updateDataApi={updateDataApi} setUpdateDataApi={setUpdateDataApi} />
-  <ol>
+    <Form data={data} setData={setData} />
+    <ol>
     {
       data.map((curElem)=>{
         const {id,title,body} = curElem;
-       return (
-        <li key={id}>
-          <p>Title: {title}</p>
-          <p>Body: {body}</p>
-          <button onClick={()=>handleUpdatePost(curElem)}>Edit</button>
-          <button onClick={()=>handleDeletePost(id)}>Delete</button>
+        return(
+          <li key={id}>
+            <p>Title:{title}</p>
+            <p>Body:{body}</p>
+            <button>Edit</button>
+            <button onClick={()=>handleDeletePost(id)}>Delete</button>
           </li>
-       )
+        )
       })
     }
-  </ol>
-  </>
+    </ol>
+    </>
   )
-
 }

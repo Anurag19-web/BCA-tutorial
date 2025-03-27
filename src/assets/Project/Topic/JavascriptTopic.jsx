@@ -10,13 +10,13 @@ export const JavascriptTopic = () =>{
     return (
         <>
         <div className="Chapter-head-div">
-            <h1 className="Chapter-head">JAVASCRIPT HAVE SOME VIDEO</h1>
+            <h1 className="Chapter-head">Basic JavaScript</h1>
             {/* <p className="Chapter-para" >Click to start studying</p> */}
         </div>
         <br/>
         <div className="Chapter-div">
-            <h1 className="Chapter-div-head">JAVASCRIPT VIDEOS</h1>
-            <p className="Chapter-div-para">Learn the basics and advance of Javascript.</p>
+            <h1 className="Chapter-div-head">JavaScript Videos</h1>
+            <p className="Chapter-div-para">Learn the basics of Javascript.</p>
             
             {/* <NavLink to="/videos" className="Chapter-div-bt"   >start Learning</NavLink> */}
             <button  className="Chapter-div-btn"  onClick={()=>handleClick("javascript")}>

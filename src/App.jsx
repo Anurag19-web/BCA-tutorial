@@ -20,8 +20,45 @@ import { JavaTopic } from "./assets/Project/Topic/JavaTopic"
 import { CppTopic } from "./assets/Project/Topic/cppTopic"
 // import "./output.css";
 import { Login } from './assets/Project/Account/Login'
+import { createContext, useEffect, useState } from 'react'
+import { AboutUs } from './assets/Project/Footers/AboutUs'
+import { Help } from './assets/Project/Footers/Help'
+import { Contact } from './assets/Project/Footers/Contact'
+import { Posts } from './assets/Posts'
 
 function App(){
+
+  const body=document.querySelector('body')
+
+  const [theme,setTheme] = useState("light");
+  useEffect(()=>{
+    const matchMedia = window.matchMedia("(prefers-color-scheme : dark)");
+
+    const setInitialTheme = () =>{
+      setTheme(matchMedia.matches ? "dark" : "light");
+    }
+    
+    setInitialTheme();
+    const themeChangeListener = (e) =>{
+      setTheme(e.matches ? "dark" : "light");
+    }
+
+    matchMedia.addEventListener("change", themeChangeListener)
+    
+
+    return()=>{
+      matchMedia.removeEventListener("change", themeChangeListener);
+    }
+  },[])
+
+  if(theme==="dark"){
+    body.style.backgroundColor="black"
+    body.style.color="white";
+  }
+  else if(theme === "light"){
+    body.style.backgroundColor="white"
+    body.style.color="black";
+  }
 
   const router = createBrowserRouter([
     {
@@ -30,7 +67,7 @@ function App(){
       children:[
         {
           path:"/",
-          element:<Home/>
+          element:<Home theme={theme} setTheme={setTheme}/>
         },
         {
           path:"/categories",
@@ -100,24 +137,35 @@ function App(){
           path:"/videos",
           element:<Videos/>
         },
+        {
+          path:"/about",
+          element:<AboutUs/>
+        },
+        {
+          path:"/help",
+          element:<Help/>
+        },
+        {
+          path:"/contact",
+          element:<Contact/>
+        },
       ]
     }
   ])
-
-  
+ 
  return (
  <>
- <RouterProvider router={router} />
-</>
+ <RouterProvider router={router} theme={theme}  />
+ </>  
  )
-
-
 }
+
+
+export default App
 
 //https://jsonplaceholder.typicode.com/posts
 //https://pokeapi.co/api/v2/pokemon/pikachu
 
-export default App
 
 // import './App.css'
 // import { Posts } from './assets/Posts'

@@ -20,7 +20,7 @@ export const Login = () =>{
     }
     return(
     <>
-    <div className="form-div">
+    <div className="form-login">
     <h1 className="login-head">Login</h1>
     <form className="login-form" onSubmit={handleFormSubmit}>
     <input type="email" name="email" className="login-email" value={loginForm.email} onChange={handleLogin} placeholder="Email"/>
@@ -28,11 +28,11 @@ export const Login = () =>{
     <br/>
     <input type="password" name="password" className="login-password" value={loginForm.password} onChange={handleLogin} placeholder="Password"/>
     <br/>
-    <button className="login-btn">Login</button>
+    <button className="login-submit-btn">Login</button>
     <NavLink to="/">
-        <div className="account-home-btn">Home</div>
-        <div className="signup-info-div">
-        <p className="signup-info">Don't have an account?</p><NavLink to="/login" className="signup-btn">Sign Up</NavLink>
+        <div className="login-home-btn">Home</div>
+        <div className="login-info-div">
+        <p className="login-info">Don't have an account?</p><NavLink to="/signup" className="login-btn">Sign Up</NavLink>
         </div>
         </NavLink>
     </form>

@@ -56,7 +56,7 @@ export const Videos = () =>{
                 <h1>Accounting Process & Finalistion of Accounts</h1>
                 <p>Below are the videos for this chapter. Watch them in sequence to master the concepts.</p>
                 </div>
-                <div>
+                <div  className="VideosMainDiv">
                     {
                         video[7].javascript.map((jsData) =>{
                             const {id,name,URL} = jsData;
@@ -64,7 +64,7 @@ export const Videos = () =>{
                                 <div className="VideosDiv" key={id}>
                                 {/* <p>{id}</p> */}
                
-               <iframe width="450" height="300" src={URL} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
+               <iframe width="450" className="VideoFrame" height="300" src={URL} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
                {/* <NavLink to={URL} className="VideoLink">click here</NavLink> */}
                </iframe>
                {/* <h1 className="VideoHead">{name}</h1> */}
@@ -86,7 +86,7 @@ export const Videos = () =>{
                 <h1>Accounting Process & Finalistion of Accounts</h1>
                 <p>Below are the videos for this chapter. Watch them in sequence to master the concepts.</p>
                 </div>
-                <div>
+                <div className="VideosMainDiv">
                     {
                         video[14].python.map((pyData) =>{
                             const {id,name,URL} = pyData;
@@ -94,7 +94,7 @@ export const Videos = () =>{
                                 <div className="VideosDiv" key={id}>
                                 {/* <p>{id}</p> */}
                
-               <iframe width="450" height="300" src={URL} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
+               <iframe width="450" className="VideoFrame" height="300" src={URL} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
                {/* <NavLink to={URL} className="VideoLink">click here</NavLink> */}
                </iframe>
                {/* <h1 className="VideoHead">{name}</h1> */}
@@ -125,7 +125,7 @@ export const Videos = () =>{
             <div key={id} className="VideosDiv" style={{display:indexsToStyles.includes(id) ? "block" :"none"}}>
                {/* <p>{id}</p> */}
                
-               <iframe width="450" height="300" src={URL} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
+               <iframe className="VideoFrame" width="450" height="300" src={URL} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
                {/* <NavLink to={URL} className="VideoLink">click here</NavLink> */}
                </iframe>
                {/* <h1 className="VideoHead">{name}</h1> */}

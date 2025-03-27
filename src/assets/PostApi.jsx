@@ -9,13 +9,9 @@ export const getPost = () =>{
 }
 
 export const deletePost = (id) =>{
-    return api.delete(`/posts/${id}`)
+    return api.delete(`/posts/${id}`);
 }
 
 export const PostData = (post) =>{
     return api.post("/posts",post)
-}
-
-export const updateData = (id,post) =>{
-    return api.put(`/posts/${id}`,post)
 }

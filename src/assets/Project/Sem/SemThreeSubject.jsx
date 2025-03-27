@@ -10,7 +10,7 @@ export const SemThreeSubject = () =>{
         <div className="Subject-div">
             <h1 className="Subject-div-head">C++</h1>
             <p className="Subject-div-para">Explore videos on C++.</p>
-            <NavLink to="/c++/topic" className="Subject-div-btn">
+            <NavLink to="/cpp/topic" className="Subject-div-btn">
             <div className="Subject-div-btn-div">
             Explore
             </div>
@@ -28,7 +28,7 @@ export const SemThreeSubject = () =>{
         </div>
         <br/>
         <div className="Subject-div">
-            <h1 className="Subject-div-head">PYTHON</h1>
+            <h1 className="Subject-div-head">Python</h1>
             <p className="Subject-div-para">Explore videos on Python.</p>
             <NavLink to="/python/topic" className="Subject-div-btn">
             <div className="Subject-div-btn-div">

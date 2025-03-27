@@ -10,13 +10,13 @@ export const PythonTopic = () =>{
     return (
         <>
         <div className="Chapter-head-div">
-            <h1 className="Chapter-head">PYTHON HAVE SOME VIDEOS</h1>
+            <h1 className="Chapter-head" >Python Videos</h1>
             {/* <p className="Chapter-para" >Click to start studying</p> */}
         </div>
         <br/>
         <div className="Chapter-div">
-            <h1 className="Chapter-div-head">PYTHON VIDEOS</h1>
-            <p className="Chapter-div-para">Learn the basics and advance of Python.</p>
+            <h1 className="Chapter-div-head" >Python Videos</h1>
+            <p className="Chapter-div-para" >Learn the basic of Python.</p>
             
             {/* <NavLink to="/videos" className="Chapter-div-bt"   >start Learning</NavLink> */}
             <button  className="Chapter-div-btn"  onClick={()=>handleClick("python")}>
