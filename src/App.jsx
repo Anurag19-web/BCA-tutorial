@@ -149,6 +149,10 @@ function App(){
           path:"/contact",
           element:<Contact/>
         },
+        // {
+        //   path: "/post",
+        //   element: <Posts/>
+        // } 
       ]
     }
   ])
