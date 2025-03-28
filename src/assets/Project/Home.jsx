@@ -26,8 +26,8 @@ export const Home = ({theme}) =>{
         <p >Understand the basics of coding.</p>
         <br/>
         <br/>
-        <h3 >Business Law</h3>
-        <p >Get familiar with essential business laws.</p>
+        <h3 >Unlock Your Tech Potential</h3>
+        <p >Master programming skills with engaging tutorials and practical insights-your journey to innovation starts here.</p>
     </div>
     </>
     )

@@ -223,6 +223,120 @@
     font-size: 30px;
     margin-left: 100px;
 }
+.about-main-div{
+    margin-top: 200px;
+}
+.about-head{
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.about-para1{
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.about-para2{
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.about-misson-head{
+    font-size: 30px;
+    margin-left: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.about-para3{
+    font-size: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.about-team-head{
+    font-size: 30px;
+    margin-left: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.about-para4{
+    font-size: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.Help-Main-div{
+    margin-top: 200px;
+}
+.help-head{
+    font-size: 45px;
+    text-align: center;
+    font-weight: bold;
+}
+.help-assitant{
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+}
+.help-para1{
+    text-align: center;
+    font-size: 20px;
+}
+.help-common-head{
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+}
+.help-common-list{
+    text-align: center;
+    font-size: 15px;
+}
+.help-improve{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+.contact-main-div{
+    margin-top: 200px;
+}
+.contact-head{
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.contact-para1{
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.contact-para2{
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.contact-head2{
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+.contact-email{
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.contact-insta{
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.contact-para3{
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
 .VideosMainDiv{
 display: block;
 }
@@ -376,7 +490,9 @@ display: block;
         padding: 0;
     }
     .Header{
-        width: 100%;
+        position: fixed;
+        top: 0;
+        width: 440px;
         /* height: 230px; */
         height: 170px;
         margin-top: -20px;
@@ -395,7 +511,7 @@ display: block;
     }
     .Home{
         margin-top: 100px;
-        width: 440px;
+        width: 430px;
         height: 180px;
     }
     .Home-head{
@@ -418,17 +534,23 @@ display: block;
         margin-left: -15px;
         text-align: center;
     }
+    .Categories-main-div{
+        width: auto;
+    }
     .Categories-head-div{
-        margin-top: -50px;
+        margin-top: -60px;
         /* height: 70px; */
+        text-align: center;
+        margin-left: -5px;
     }
     .Categories-head{
       font-size: 30px;
-      margin-left: -430px;
+      /* margin-left: -430px; */
     }
     .Categories-para{
         font-size: 15px;
-        margin-left: -490px;
+        margin-left: 4px;
+        width: -490px;
     }
     .Categories-div{
         margin-left: 70px;
@@ -452,16 +574,18 @@ display: block;
     }
     .Subject-head-div{
         margin-top: 110px;
-        width: -110px;
+        /* position: fixed;
+        left: 0; */
+        text-align: center;
+        margin-left: -5px;
     }
     .Subject-head{
         font-size: 30px;
-      margin-left: -440px;
-      width: -110px;
+      /* margin-left: -440px; */
     }
     .Subject-para{
         font-size: 15px;
-        margin-left: -540px;
+        margin-left: 0px;
     }
     .Subject-div{
         margin-left: 70px;
@@ -485,11 +609,13 @@ display: block;
     }
     .Chapter-head-div{
         margin-top: 160px;
-        width: -110px;
+        /* width: -110px; */
+        text-align: center;
+        margin-left: -5px;
     }
     .Chapter-head{
       font-size: 20px;
-      margin-left: -370px;
+      margin-left: 10px;
       
     }
     .Chapter-div{
@@ -526,6 +652,7 @@ display: block;
         margin-top: 20px;
         margin-bottom: 135px;
         height: 100px;
+        width: 400px;
      }
      .VideoFrame{
         height: 200px;
@@ -547,6 +674,22 @@ display: block;
     .Footer-contact{
         font-size: 18px;
         margin-left: 70px;
+    }
+    .about-main-div{
+        margin-top: 110px;
+    }
+    .Help-Main-div{
+        margin-top: 110px;
+    }
+    .help-assitant{
+        font-size: 28px;
+    }
+    .help-para1{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .contact-main-div{
+        margin-top: 110px;
     }
     .form-signup{
         margin-top: -80px;

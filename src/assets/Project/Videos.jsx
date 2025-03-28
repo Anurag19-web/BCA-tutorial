@@ -53,8 +53,8 @@ export const Videos = () =>{
             return (
                 <>
                 <div className="Videos-head-div">
-                <h1>Accounting Process & Finalistion of Accounts</h1>
-                <p>Below are the videos for this chapter. Watch them in sequence to master the concepts.</p>
+                <h1>Future-Proof Your Career With Technical Tutorials</h1>
+                <p>Below are the videos for this Topic. Watch them in sequence to master the concepts.</p>
                 </div>
                 <div  className="VideosMainDiv">
                     {
@@ -83,8 +83,8 @@ export const Videos = () =>{
             return (
                 <>
                 <div className="Videos-head-div">
-                <h1>Accounting Process & Finalistion of Accounts</h1>
-                <p>Below are the videos for this chapter. Watch them in sequence to master the concepts.</p>
+                <h1>Future-Proof Your Career With Technical Tutorials</h1>
+                <p>Below are the videos for this Topic. Watch them in sequence to master the concepts.</p>
                 </div>
                 <div className="VideosMainDiv">
                     {
@@ -112,8 +112,8 @@ export const Videos = () =>{
         <>
         {/* <YouTube videoId="dQw49WgXcQ" opts={opts}/> */}
         <div className="Videos-head-div">
-            <h1>Accounting Process & Finalistion of Accounts</h1>
-            <p>Below are the videos for this chapter. Watch them in sequence to master the concepts.</p>
+            <h1>Future-Proof Your Career With Technical Tutorials</h1>
+            <p>Below are the videos for this Topic. Watch them in sequence to master the concepts.</p>
         </div>
         <br/>
         <div className="VideosMainDiv">
