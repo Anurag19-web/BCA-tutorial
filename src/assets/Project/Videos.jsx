@@ -1,6 +1,6 @@
 import { NavLink, useLocation } from "react-router-dom";
 // import YouTube from "react-youtube";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { useState } from "react";
 import Project from "./Topic/Project.json";
 
@@ -11,6 +11,8 @@ export const Videos = () =>{
     const {page} = location.state;
     const [video,setVideo] = useState([]);
     const indexsToStyles = [page]
+
+    const videoRef=useRef(null);
 
     // const opts={
     //     height:"360",
@@ -43,6 +45,9 @@ export const Videos = () =>{
         //       console.log(error);
         //     }
         // }
+
+        console.log(videoRef.current);
+        
 
         useEffect(()=>{
        setVideo(Project)
@@ -94,7 +99,7 @@ export const Videos = () =>{
                                 <div className="VideosDiv" key={id}>
                                 {/* <p>{id}</p> */}
                
-               <iframe width="450" className="VideoFrame" height="300" src={URL} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
+               <iframe width="450" className="VideoFrame" height="300" src={URL} ref={videoRef} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
                {/* <NavLink to={URL} className="VideoLink">click here</NavLink> */}
                </iframe>
                {/* <h1 className="VideoHead">{name}</h1> */}
